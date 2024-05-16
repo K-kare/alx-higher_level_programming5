@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """fetches url https://alx-intranet.hbtn.io/status"""
 import urllib.request
+"""
+Python module for fetching url
+body : variable stores the response
+"""
 if __name__ == "__main__":
     request = urllib.request.Request("https://alx-intranet.hbtn.io/status")
     with urllib.request.urlopen(request) as response:
